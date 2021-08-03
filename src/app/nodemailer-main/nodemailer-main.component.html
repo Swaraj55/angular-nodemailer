@@ -1,0 +1,146 @@
+<!-- Navbar Section -->
+
+<nav class="navbar navbar-expand-sm bg-dark stick-top navbar-dark">
+
+    <!-- Brand/logo -->
+    <a class="navbar-brand" href="#">
+        <i class="fab fa-mailchimp fa-3x" style="color: #f4c2c2"></i>   
+    </a>
+    <!-- Links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#"><span style="font-size: 45px; font-weight: bold;color: #4cbb17">MAILER</span>
+        </a>
+      </li>
+    </ul>
+  
+</nav>
+
+<!-- Contact us section through which we can send mail -->
+
+<div class="container-fluid">
+    <div class="row bg-dark" id="main-container-section" style="height: 500px; min-height:500px;">
+        
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5">
+            <h3 class="display-4 mt-lg-5 mt-xs-2 ml-xs-2 ml-lg-5 shadow-lg" style="color:#4cbb17; font-weight:bold;">
+                Get more done with Mailer
+            </h3>
+            <p class="lead ml-xs-2 ml-lg-5" style="color:#ffffff">
+                Take email marketing beyond the inbox with advanced tools made easy. Enjoy award-winning live 24/7 support along with all the features you need to succeed.
+            </p>
+        </div>
+
+        <div class="col-xs-12 col-sm-12 col-md-5 col-lg-5" id="combination-of-two-images">
+            <img src="../../assets/tooglingDiagram.png" class = "mainPageImage1" alt="A toggling Diagram">
+            <img src="../../assets/AGirl.jpg" class = "mainPageImage2" alt="A girl writing an mail which surrounds with books">
+        </div>
+    </div>
+</div>
+<div class="container-fluid padding">
+    <div class="row jumbotron mail-form-section">
+        
+        <div class="col-12">
+            <h1 class="display-4" style="font-weight: bold; color: #4cbb17;text-align: center;">
+                CONTACT US
+            </h1>
+            <hr class="firstLine">
+        </div>    
+        
+        <div class="card  col-12">
+            <div class="row">
+                <div class="col-md-4 col-lg-4" style="background-color: #4cbb17;">
+                    <h4 class="float-left pt-2 pl-2">Mailer</h4><br><br>
+                        <span><i class="fas fa-road pr-1"></i>4414 Crosswind Drive, Kentucky</span><br>
+                        <span><i class="fas fa-phone-alt pr-1"></i>270-853-8528</span><br>
+                        <span><i class="fas fa-envelope pr-1"></i>test@mailer.test</span>
+                </div>
+                <div class="col-md-8 col-lg-8 bg-dark">
+                    <h4 class="pt-2 pl-2" style="color: #4cbb17;">
+                        Email Us
+                    </h4>
+                    <form [formGroup]="mailerForm" name="mailerForm" (ngSubmit)="onSubmit()"  novalidate>
+                        <div class="row pt-2 pl-2">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="username" style="color: #4cbb17;">Name: </label>
+                                    <input type="text" formControlName="username" id="username"class="form-control" id="username">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="company" style="color: #4cbb17;">Company: </label>
+                                    <input type="text" formControlName="company" class="form-control" id="company">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pt-2 pl-2">
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="phone-number" style="color: #4cbb17;">Phone Number: </label>
+                                    <input type="number" formControlName="phoneNumber" class="form-control" id="phone-number">
+                                </div>
+                            </div>
+                            <div class="col-md-6 col-lg-6">
+                                <div class="form-group">
+                                    <label for="email" style="color: #4cbb17;">Email Address: </label>
+                                    <input type="email" formControlName="email" class="form-control" id="email">
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row pt-2 pl-2">
+                            <div class="col-12">
+                                <div class="form-group">
+                                    <label for="message" style="color: #4cbb17;">Message: </label>
+                                    <textarea class="form-control" formControlName="message" rows="5" id="comment"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="col-12 pt-4 pb-4">
+                                <button type="submit" [disabled]="mailerForm.invalid" class="btn btn-outline-success btn-block">Submit</button>
+                            </div>
+                        </div>
+
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!-- Footer Section -->
+<footer>
+    <div class="container-fluid padding">
+        <div class="row bg-dark">
+            <div class="col-12 pt-4 pl-4 pb-4">
+                <i class="fab fa-mailchimp fa-2x" style="color: #f4c2c2">
+                    <span style="font-size: 30px; font-weight: bold;color: #4cbb17;padding-left: 5px;">MAILER</span>  
+                </i>    
+            </div>
+            <div class="col-md-4 text-center text-white"> 
+                <h5>Support</h5>
+                <hr class="light">
+                <p>Knowledge base</p>
+                <p>Find an expert</p>
+                <p>Request demo</p>
+            </div>
+            <div class="col-md-4 text-center text-white">
+                <h5>Company</h5>
+                <hr class="light">
+                <p>About us</p>
+                <p>Company Values</p>
+                <p>Webinars</p>
+            </div>
+            <div class="col-md-4 text-center text-white">
+                <h5>Follow Us</h5>
+                <hr class="light">
+                <p>Facebook</p>
+                <p>Instagram</p>
+                <p>YouTube</p>
+                <p>Twitter</p>
+            </div>
+        </div>
+    </div>
+</footer>

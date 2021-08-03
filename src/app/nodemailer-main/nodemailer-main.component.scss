@@ -1,0 +1,58 @@
+@media screen and (max-width: 576px) {
+    #combination-of-two-images {
+        visibility: hidden;
+    }
+}
+
+.mainPageImage1 {
+    width: 500px;
+    height: 500px;
+    position: absolute;
+    z-index: 1;
+    margin-left: 200px;
+}
+
+.mainPageImage2 {
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    z-index: 2;
+    border-radius: 5px;
+    margin-left: 190px;
+}
+
+.mail-form-section{
+  background-image: radial-gradient(#4cbb17 5%, transparent 5%); //color of bullets
+  background-position: 0 0, 50px 50px; 
+  background-size: 50px 50px; //Bullets size
+}
+
+.firstLine{
+    width: 55%;
+    margin-top: .3rem;
+    margin-bottom: 3rem;
+}
+
+.light {
+    border: 1px solid #fff;
+    width: 60%;
+}
+
+
+// Import theming functions
+@import '~@angular/material/theming';
+
+// Define the application's custom theme.
+$success: mat-palette($mat-green);
+$danger: mat-palette($mat-red);
+
+::ng-deep {
+    .mat-snack-bar-success{
+        color: #ffffff !important;
+        background-color: mat-color($success, 500) !important;
+    }
+    .mat-snack-bar-danger {
+        color: #ffffff !important;
+        background-color: mat-color($danger, 500) !important;
+    }
+}
